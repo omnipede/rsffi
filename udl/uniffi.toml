@@ -1,0 +1,5 @@
+[bindings.python]
+cdylib_name = "awesomemodule"
+
+[bindings.csharp]
+cdylib_name = "awesomemodule"

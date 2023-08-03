@@ -1,0 +1,16 @@
+<html lang="">
+    <body>
+        Please check your dev console.
+    </body>
+    <script type="module">
+        import init, { add, sub, MyStruct } from './pkg/wasm.js'
+        init().then(() => {
+            const a = add(BigInt(200), BigInt(100));
+            const b = sub(BigInt(200), BigInt(100));
+            console.log(`Add result: ${a}`);
+            console.log(`Sub result: ${b}`);
+            const c = new MyStruct(BigInt(a), BigInt(b));
+            console.log(c.some_method());
+        });
+    </script>
+</html>

@@ -1,0 +1,14 @@
+[package]
+name = "udl"
+version = "0.1.0"
+edition = "2021"
+
+[lib]
+name = "awesomemodule"
+crate-type = ["cdylib"]
+
+[dependencies]
+uniffi = { version = "0.24.1" }
+
+[build-dependencies]
+uniffi = { version = "0.24.1", features = [ "build" ] }

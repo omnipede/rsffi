@@ -1,0 +1,15 @@
+[workspace]
+members = [
+    "engine",
+    "c",
+    "cpp",
+    "csharp",
+    "wasm",
+    "udl",
+    "uniffi-bindgen",
+]
+
+default-members = [
+    "engine",
+    "uniffi-bindgen",
+]
